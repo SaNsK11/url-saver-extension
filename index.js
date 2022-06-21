@@ -2,11 +2,17 @@ let myLeads = [];
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
+const deleteBtn = document.getElementById("delete-btn")
 
 
-localStorage.clear()
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
+
+deleteBtn.addEventListener("dblclick", function(){
+    localStorage.clear()
+    myLeads = []
+    renderLeads()
+})
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
@@ -18,6 +24,8 @@ inputBtn.addEventListener("click", function() {
     
 
 })
+
+
 
 function renderLeads() {
     let listItems = ""
