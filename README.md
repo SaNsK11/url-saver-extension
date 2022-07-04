@@ -12,5 +12,9 @@ This is a chrome extension, which is used to save any URLs that the user wants a
 4. Click on 'Load Unpacked' and select the folder where the repository is cloned
 5. Ready to use
 
+## Support
+
+If you have any questions regarding the working or anything about the extension, feel free to reach out to me on [Twitter](https://twitter.com/sanskar_goyal11)
+
 
 
